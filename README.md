@@ -49,7 +49,7 @@ node ./orderbook/create.js
 Output:
 
 ```
-wBn7-31aDtChhLfUk_eXNG9Nbafa_ghT29XRxk7osiM create orderbook agent: 8GIoDaxheWB2HSvdWehQHrIYilzIty5_8NZt4XHojpw
+wBn7-31aDtChhLfUk_eXNG9Nbafa_ghT29XRxk7osiM create orderbook agent: TwgBoDbHTBpkrruRxUTom4VFC5QhaiBwN9hlsUzHd3Q
 ORHaLUrAiknTAq2Wszoyl6buJrd3MqDKLTF_2CggLtw create orderbook agent: Cns0yMx0Ey3Z6NvRX66U6LHXZCXLFbOGZA0xfUwG99A
 ```
 
@@ -64,7 +64,7 @@ Edit `./orderbook/deposit.js` and set your agent id.
 // set the jwk(json) and agent id by yourself
 const jwk = arJWK1
 // We create two orderbook agents for the test, this is the first one 
-const agentId = '8GIoDaxheWB2HSvdWehQHrIYilzIty5_8NZt4XHojpw'
+const agentId = 'TwgBoDbHTBpkrruRxUTom4VFC5QhaiBwN9hlsUzHd3Q'
 ...
 ```
 
@@ -77,7 +77,7 @@ node ./orderbook/create.js
 If you will check balances in your agent:
 
 ```bash
-node ./balance.js --address='8GIoDaxheWB2HSvdWehQHrIYilzIty5_8NZt4XHojpw'
+node ./balance.js --address='TwgBoDbHTBpkrruRxUTom4VFC5QhaiBwN9hlsUzHd3Q'
 ```
 
 Edit `deposit.js` again, set your second agent id. Run and check agent balance again. Then those two agents had $HELLO and $KITTY tokens.
@@ -90,7 +90,7 @@ Edit `./orderbook/make.js`
 
 ```javascript
 ...
-const agentId = '8GIoDaxheWB2HSvdWehQHrIYilzIty5_8NZt4XHojpw'
+const agentId = 'TwgBoDbHTBpkrruRxUTom4VFC5QhaiBwN9hlsUzHd3Q'
 ...
 ```
 
@@ -110,7 +110,7 @@ openOrders [
     HolderAssetID: '4557tfvtAlS8WS0-KF0sGdfgy6An2dcVXQUGocrKV7U',
     HolderAmount: '3',
     NoteID: 'pKK3aXTn-7oR50w33y_bwIwt3x4eRPxWjYeEzWOq2Mg',
-    Issuer: '8GIoDaxheWB2HSvdWehQHrIYilzIty5_8NZt4XHojpw',
+    Issuer: 'TwgBoDbHTBpkrruRxUTom4VFC5QhaiBwN9hlsUzHd3Q',
     Type: 'Orderbook',
     AssetID: '-v4cUCUcRiJH67jPMUt-Uhn-K4PHxrkoySM2uqAjAF0',
     IssueDate: 1726236373254,
@@ -147,6 +147,6 @@ node ./orderbook/take.js
 After transaction done, the balances of both agents have been updated, and the transaction is complete.
 
 ```bash
-node ./balance.js --address='8GIoDaxheWB2HSvdWehQHrIYilzIty5_8NZt4XHojpw'
+node ./balance.js --address='TwgBoDbHTBpkrruRxUTom4VFC5QhaiBwN9hlsUzHd3Q'
 node ./balance.js --address='Cns0yMx0Ey3Z6NvRX66U6LHXZCXLFbOGZA0xfUwG99A'
 ```

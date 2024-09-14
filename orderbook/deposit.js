@@ -9,7 +9,7 @@ const arweave = Arweave.init({})
 const testRun = async () => {
 	// set up the jwk(json) and agent id by yourself
 	const jwk = arJWK1
-	const agentId = '8GIoDaxheWB2HSvdWehQHrIYilzIty5_8NZt4XHojpw'
+	const agentId = 'TwgBoDbHTBpkrruRxUTom4VFC5QhaiBwN9hlsUzHd3Q'
 	// const jwk = arJWK2
 	// const agentId = 'Cns0yMx0Ey3Z6NvRX66U6LHXZCXLFbOGZA0xfUwG99A'
 
